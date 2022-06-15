@@ -1,0 +1,11 @@
+type Query {
+    googleFormPage(page_url_key: String!): GoogleFormPage
+    @resolver(class: "WindAndeddu\\GoogleFormPageGraphQl\\Model\\Resolver\\GoogleFormPage")
+    @cache(cacheIdentity: "WindAndeddu\\GoogleFormPageGraphQl\\Model\\Resolver\\GoogleFormPage\\Identity")
+}
+
+type GoogleFormPage {
+    page_url_key: String
+    iframe_url: String
+    iframe_height: Int
+}

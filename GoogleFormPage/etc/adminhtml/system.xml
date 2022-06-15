@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="google_form_page" translate="label" sortOrder="40" showInDefault="1">
+            <tab>content</tab>
+            <label>Google Form Page</label>
+            <resource>Magento_Backend::content</resource>
+            <group id="google_form_page_config" translate="label" type="text" sortOrder="10" showInDefault="1">
+                <label>Google Form Page</label>
+                <field id="dynamic_google_form" translate="label" type="text" sortOrder="10" showInDefault="1">
+                    <label>Google Form</label>
+                    <frontend_model>WindAndeddu\GoogleFormPage\Block\Adminhtml\System\Config\Field\GoogleFormPageConfig</frontend_model>
+                    <backend_model>WindAndeddu\GoogleFormPage\Model\Config\Backend\Serialized</backend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
+
